@@ -1,0 +1,19 @@
+# Keymap for Ian Delahorne to survive in Atom Land
+
+# Since I've worked for so long using Esc as Meta in emacs, this rebinds the
+# most common uses I keep missing. These are for use with https://github.com/avendael/atomic-emacs
+'body':
+  'escape x': 'command-palette:toggle'
+
+'atom-workspace atom-text-editor':
+  'escape w':'atomic-emacs:copy-region-as-kill'
+  'escape <': 'core:move-to-top'
+  'escape >': 'core:move-to-bottom'
+  'escape q': 'autoflow:reflow-selection'
+  'escape /': 'autocomplete-plus:activate'
+  'esacpe ;': 'editor:toggle-line-comments'
+  'escape l': 'atomic-emacs:downcase-word-or-region'
+  'escape u': 'atomic-emacs:upcase-word-or-region'
+
+'.platform-darwin':
+  'escape g': 'go-to-line:toggle'
